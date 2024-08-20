@@ -93,7 +93,7 @@ a:hover {
 	text-decoration: underline;
 	text-decoration-color: royalblue;
 	text-decoration-thickness: 2px;
-	margin: 0 0 17px 0;
+	margin: 50px 0 17px 0;
 }
 #bio h4 {
 	font-size: 20px;
@@ -104,11 +104,11 @@ a:hover {
 }
 #bio h5 {
 	font-size: 16px;
-	margin: 9px 0 0 0;
+	margin: 75px 0 0 0;
 }
 #bio p {
 	line-height: 22px;
-	margin: 0 0 23px 0;
+	margin: 5px 0 23px 0;
 }
 #bio #about {
 	float: left;
@@ -119,11 +119,11 @@ a:hover {
 	float: left;
 	border-radius: 50%;
 	width: 200px;
-	height: 200px;
+	height: 250px;
 	margin: 0 50px 0 0;
-	-webkit-box-shadow: 0px 0 5px #36454F;
-	-moz-box-shadow: 0px 0 5px #36454F;
-	box-shadow: 0px 0 5px #36454F;
+	-webkit-box-shadow: 0px 0 5px royalblue;
+	-moz-box-shadow: 0px 0 5px royalblue;
+	box-shadow: 0px 0 5px royalblue;
 	background: #D3D3D3;
 	padding: 5px;
 }
@@ -165,19 +165,20 @@ a:hover {
 	font-size: 18px;
 }
 #featured-projects p {
+	float:left;
 	clear: both;
-	width: 270px;
+	width: 440px;
 }
 .project {
 	float: left;
 	width: 440px;
 	height: 240px;
-	 padding: 5px; 
+	padding-bottom: 45px; 
 	background: #D3D3D3;
 	-webkit-box-shadow: 0px 0 5px #D3D3D3;
 	-moz-box-shadow: 0px 0 5px#D3D3D3;
 	box-shadow: 0px 0 5px #D3D3D3;
-	margin: 0 0 55px 0px; 
+	margin: 2px 0 55px 2px; 
 }
 .project:hover {
 	opacity: 0.7;
