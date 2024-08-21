@@ -246,20 +246,133 @@ a:hover {
 /* -- Footer -- */
 /* ------------ */
 #footer {
+	text-align: center;
 	width: 100%;
 	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 25px;
 }
 #footer h3{
-	clear: both;
+	display:inline-block;
 	text-decoration: underline;
 	text-decoration-color: royalblue;
 	text-decoration-thickness: 2px;
-	margin: 75px 0px 5px 150px;
-	border-top: 3px #ddd solid;
+	margin: 0 auto;
 }
 #footer ul {
-	clear:both;
+	display:inline;
 	font-size: 18px;
 	color:  #36454F;
-	margin: 0px 0px 30px 175px;
+	margin: 0 auto;
+}
+/* ------------ */
+/* -- New Page -- */
+/* ------------ */
+#page_header {
+	padding: 50px 0 0 0;
+	border-bottom: 5px royalblue solid;
+	overflow: hidden;
+}
+#page_header ul {
+	float:right;
+	display:inline;
+	font-size: 18px;
+	margin: 0 auto;
+}
+#page_header ul a {
+	color:#36454F
+}
+#page_header h1 {
+	float: left;
+	display:inline;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	margin: 0;
+}
+#page_header ul a:hover {
+	color: royalblue;
+}
+/* ------------ */
+/* -- MSSQL_PBI -- */
+/* ------------ */
+#SQL_PBI {
+	padding: 5px 0 0px 0;
+	/* border-bottom: 5px royalblue solid; */
+	overflow: hidden;
+}
+
+#SQL_PBI h2 {
+	float: right;
+	font-size: 30px;
+	color: #222;
+	margin: 8px 0 0 0;
+	letter-spacing: -1px;
+}
+#SQL_PBI h3 {
+	font-size: 20px;
+	color: #222;
+	text-decoration: underline;
+	text-decoration-color: royalblue;
+	text-decoration-thickness: 2px;
+	margin: 50px 0 17px 0;
+}
+#SQL_PBI h4 {
+	font-size: 20px;
+	margin: 0 0 0 0;
+}
+#SQL_PBI h4 span {
+	color: #222;
+}
+#SQL_PBI h5 {
+	font-size: 16px;
+	margin: 75px 0 0 0;
+}
+#SQL_PBI p {
+	line-height: 22px;
+	margin: 5px 0 23px 0;
+}
+#SQL_PBI #about {
+	float: left;
+	/* width: 610px; */
+	margin: 0 0 0px 0;
+}
+#SQL_PBI h6 {
+	float: left;
+	margin: 10px 0 10px 0px;
+	font-size: 18px;
+}
+.project {
+	float: left;
+	width: 440px;
+	height: 240px;
+	padding-bottom: 45px; 
+	background: #D3D3D3;
+	-webkit-box-shadow: 0px 0 5px #D3D3D3;
+	-moz-box-shadow: 0px 0 5px#D3D3D3;
+	box-shadow: 0px 0 5px #D3D3D3;
+	margin: 2px 0 55px 2px; 
+}
+#SQL_PBI .project:hover {
+	opacity: 1;
+}
+.last {
+	float: right;
+}
+/* ------------ */
+/* -- New Page Nav -- */
+/* ------------ */
+#page_nav{
+
+	font-size: 18px;
+}
+#page_nav ul {
+	margin: 0 auto;	
+	text-align: center;	
+}
+#page_nav ul a {
+	color:#36454F
+}
+#page_nav ul a:hover {
+	color: royalblue;
 }
