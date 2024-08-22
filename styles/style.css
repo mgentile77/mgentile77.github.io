@@ -376,3 +376,70 @@ a:hover {
 #page_nav ul a:hover {
 	color: royalblue;
 }
+/* ------------ */
+/* -- Tab_Exc_Pres -- */
+/* ------------ */
+#Tab_Exc_Pres {
+	padding: 5px 0 0px 0;
+	/* border-bottom: 5px royalblue solid; */
+	overflow: hidden;
+}
+
+#Tab_Exc_Pres h2 {
+	float: right;
+	font-size: 30px;
+	color: #222;
+	margin: 8px 0 0 0;
+	letter-spacing: -1px;
+}
+#Tab_Exc_Pres h3 {
+	font-size: 20px;
+	color: #222;
+	text-decoration: underline;
+	text-decoration-color: royalblue;
+	text-decoration-thickness: 2px;
+	margin: 50px 0 10px 0;
+}
+#Tab_Exc_Pres h4 {
+	font-size: 20px;
+	margin: 0 0 0 0;
+}
+#Tab_Exc_Pres h4 span {
+	color: #222;
+}
+#Tab_Exc_Pres h5 {
+	font-size: 16px;
+	margin: 75px 0 0 0;
+}
+#Tab_Exc_Pres p {
+	line-height: 22px;
+	margin: 10px 0 3px 0;
+}
+#Tab_Exc_Pres #about {
+	float: left;
+	/* width: 610px; */
+	margin: 0 0 20px 0;
+}
+#Tab_Exc_Pres h6 {
+	float: left;
+	margin: 10px 0 10px 0px;
+	font-size: 18px;
+}
+#Tab_Exc_Pres .project {
+	vertical-align: middle;
+	width: 800px;
+	height: 400px;
+	padding-left: 55px; 
+	padding-right: 30px;
+	background: #D3D3D3;
+	-webkit-box-shadow: 0px 0 5px #D3D3D3;
+	-moz-box-shadow: 0px 0 5px#D3D3D3;
+	box-shadow: 0px 0 5px #D3D3D3;
+	margin: 15px 15px 15px 15px; 
+}
+#Tab_Exc_Pres .project:hover {
+	opacity: 0.75;
+}
+/* .last {
+	float: right;
+} */
