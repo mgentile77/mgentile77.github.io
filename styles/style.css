@@ -85,7 +85,7 @@ a:hover {
 /* -- Bio -- */
 /* --------- */
 #bio {
-	margin: 55px 0 40px 0;
+	margin: 55px 0 35px 0;
 }
 #bio h3 {
 	font-size: 20px;
@@ -93,7 +93,7 @@ a:hover {
 	text-decoration: underline;
 	text-decoration-color: royalblue;
 	text-decoration-thickness: 2px;
-	margin: 50px 0 17px 0;
+	margin: 10px 0 17px 0;
 }
 #bio h4 {
 	font-size: 20px;
@@ -108,12 +108,12 @@ a:hover {
 }
 #bio p {
 	line-height: 22px;
-	margin: 5px 0 23px 0;
+	margin: 5px 0 15px 0;
 }
 #bio #about {
 	float: left;
 	/* width: 610px; */
-	margin: 0 0 60px 0;
+	margin: 0 0 35px 0;
 }
 #photo-bg {
 	float: left;
@@ -150,14 +150,14 @@ a:hover {
 /* ----------------------- */
 #featured-projects {
 	float: left;
-	margin: 0 0 10px 0;
+	margin: 0 0 25px 0;
 	width: 100%;
 }
 #featured-projects h3 {
 	text-decoration: underline;
 	text-decoration-color: royalblue;
 	text-decoration-thickness: 2px;
-	margin: 10px 0 25px 0;
+	margin: 10px 0 10px 0;
 }
 #featured-projects h4 {
 	float: left;
