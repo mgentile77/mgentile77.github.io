@@ -253,10 +253,8 @@ a:hover {
 	padding-bottom: 25px;
 }
 #footer h3{
+	font-size: 18px;
 	display:inline-block;
-	text-decoration: underline;
-	text-decoration-color: royalblue;
-	text-decoration-thickness: 2px;
 	margin: 0 auto;
 }
 #footer ul {
@@ -438,7 +436,7 @@ a:hover {
 	margin: 15px 15px 15px 15px; 
 }
 #Tab_Exc_Pres .project:hover {
-	opacity: 0.75;
+	opacity: 0.50;
 }
 /* .last {
 	float: right;
