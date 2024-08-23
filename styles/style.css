@@ -11,15 +11,15 @@ URL: http://www.chris-creed.com
 /* ----------- */
 .line {
 	clear: both;
-	height: 3px;
+	height: .292vw;
 	background-color: royalblue;
-	margin: 40px 0 50px 0;
+	margin: 3.891vw 0 4.864vw 0;
 }
 /* -------------------- */
 /* -- General Styles -- */
 /* -------------------- */
 #wrap {
-	width: 960px;
+	width: 87.549vw;
 	margin: 0 auto;
 }
 body {
@@ -28,29 +28,29 @@ body {
 	color: black;
 }
 h1 {
-	font-size: 38px;
-	margin: 0 0 30px 0;
+	font-size: 3.696vw;
+	margin: 0 0 2.918vw 0;
 }
 h2 {
-	font-size: 34px;
-	margin: 0 0 30px 0;
+	font-size: 3.307vw;
+	margin: 0 0 2.918vw 0;
 }
 h3 {
-	font-size: 24px;
-	margin: 30px 0 30px 0;
+	font-size: 2.335vw;
+	margin: 2.918vw 0 2.918vw 0;
 }
 h4 {
-	font-size: 20px;
-	margin: 30px 0 15px 0;
+	font-size: 1.946vw;
+	margin: 2.918vw 0 1.459vw 0;
 }
 h5 {
-	font-size: 18px;
-	margin: 30px 0 5px 0;
+	font-size: 1.751vw;
+	margin: 2.918vw 0 0.486vw 0;
 }
 p {
-	font-size: 14px;
-	line-height: 22px;
-	margin: 0 0 15px 0;
+	font-size: 1.362vw;
+	line-height: 2.14vw;
+	margin: 0 0 1.459vw 0;
 }
 a {
 	text-decoration: none;
@@ -63,75 +63,76 @@ a:hover {
 /* -- Header -- */
 /* ------------ */
 #header {
-	padding: 50px 0 10px 0;
-	border-bottom: 5px royalblue solid;
+	padding: 4.864vw 0 0.973vw 0;
+	border-bottom: 0.486vw royalblue solid;
 	overflow: hidden;
 }
 #header h1 {
 	float: left;
-	font-size: 40px;
+	font-size: 3.891vw;
 	font-weight: bold;
-	letter-spacing: -2px;
+	letter-spacing: -0.195vw;
 	margin: 0;
 }
 #header h2 {
 	float: right;
-	font-size: 30px;
+	font-size: 2.918vw;
 	color: #222;
-	margin: 8px 0 0 0;
-	letter-spacing: -1px;
+	margin: 0.778vw 0 0 0;
+	letter-spacing: -0.097vw;
 }
 /* --------- */
 /* -- Bio -- */
 /* --------- */
 #bio {
-	margin: 55px 0 35px 0;
+	margin: 5.35vw 0 3.405vw 0;
 }
 #bio h3 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	color: #222;
 	text-decoration: underline;
 	text-decoration-color: royalblue;
-	text-decoration-thickness: 2px;
-	margin: 10px 0 17px 0;
+	text-decoration-thickness: 0.195vw;
+	margin: 0.973vw 0 1.654vw 0;
 }
 #bio h4 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	margin: 0 0 0 0;
 }
 #bio h4 span {
 	color: #222;
 }
 #bio h5 {
-	font-size: 16px;
-	margin: 75px 0 0 0;
+	font-size: 1.556vw;
+	margin: 7.296vw 0 0 0;
 }
 #bio p {
-	line-height: 22px;
-	margin: 5px 0 15px 0;
+	line-height: 2.14vw;
+	margin: 0.486vw 0 1.459vw 0;
 }
 #bio #about {
 	float: left;
 	/* width: 610px; */
-	margin: 0 0 35px 0;
+	margin: 0 0 3.405vw 0;
 }
 #photo-bg {
 	float: left;
+	display:flex;
 	border-radius: 50%;
-	width: 200px;
-	height: 250px;
-	margin: 0 50px 0 0;
-	-webkit-box-shadow: 0px 0 5px royalblue;
-	-moz-box-shadow: 0px 0 5px royalblue;
-	box-shadow: 0px 0 5px royalblue;
+	justify-content: center;
+	width: 19.455vw;
+	height: 24.319vw;
+	margin: 0 4.864vw 0 0;
+	-webkit-box-shadow: 0px 0 0.486vw royalblue;
+	-moz-box-shadow: 0px 0 0.486vw royalblue;
+	box-shadow: 0px 0 0.486vw royalblue;
 	background: #D3D3D3;
-	padding: 5px;
+	padding: 0.486vw;
 }
 #bio #about .photo img {
-	/* border: 1px #ccc solid; */
-	border-radius: 50%;
-	width: 180px;
-	height: 180px;
+	/* border: 0.097vw #ccc solid; */
+	height:auto;
+	width:100%;
 	overflow: hidden;
 	object-position: center;
 }
@@ -150,41 +151,57 @@ a:hover {
 /* ----------------------- */
 #featured-projects {
 	float: left;
-	margin: 0 0 25px 0;
+	margin: 0 0 0 0;
 	width: 100%;
+}
+.box {
+	width: 50%;
+	float: left;
+}
+.box-2 {
+	width: 50%;
+	float: right;
 }
 #featured-projects h3 {
 	text-decoration: underline;
 	text-decoration-color: royalblue;
-	text-decoration-thickness: 2px;
-	margin: 10px 0 10px 0;
+	text-decoration-thickness: 0.195vw;
+	margin: 0.973vw 0 2.802vw 0;
 }
 #featured-projects h4 {
 	float: left;
-	margin: 10px 0 10px 0px;
-	font-size: 18px;
+	margin: 0 0 0.973vw 0px;
+	height: auto;
+	width: 42.802vw;
+	font-size: 1.751vw;
 }
 #featured-projects p {
 	float:left;
-	clear: both;
-	width: 440px;
+	height: auto;
+	width: 42.802vw;
 }
 .project {
 	float: left;
-	width: 440px;
-	height: 240px;
-	padding-bottom: 45px; 
+	display:flex;
+	justify-content: center;
+	width: 42.802vw;
+	height: 23.346vw;
+	/* padding-bottom: 4.377vw;  */
 	background: #D3D3D3;
-	-webkit-box-shadow: 0px 0 5px #D3D3D3;
-	-moz-box-shadow: 0px 0 5px#D3D3D3;
-	box-shadow: 0px 0 5px #D3D3D3;
-	margin: 2px 0 55px 2px; 
+	-webkit-box-shadow: 0px 0 0.486vw #D3D3D3;
+	-moz-box-shadow: 0px 0 0.486vw#D3D3D3;
+	box-shadow: 0px 0 0.486vw #D3D3D3;
+	margin: 0.195vw 0 0 0.195vw; 
+}
+#featured-projects  .project img {
+	/* border: 0.097vw #ccc solid; */
+	height:auto;
+	width:100%;
+	overflow: hidden;
+	object-position: center;
 }
 .project:hover {
 	opacity: 0.7;
-}
-.last {
-	float: right;
 }
 /* -------------- */
 /* -- Services -- */
@@ -194,11 +211,11 @@ a:hover {
 	padding: 0 0 0 0;
 }
 #services h3 {
-	margin: 0 0 25px 0;
+	margin: 0 0 2.432vw 0;
 }
 #services .service {
 	float: left;
-	margin: 0 0 0 60px;
+	margin: 0 0 0 5.837vw;
 }
 #services .first {
 	margin-left: 0;
@@ -208,8 +225,8 @@ a:hover {
 }
 #services h4 {
 	float: left;
-	margin: 0px 0 10px 10px;
-	font-size: 18px;
+	margin: 0px 0 0.973vw 0.973vw;
+	font-size: 1.751vw;
 }
 #services p {
 	clear: both;
@@ -223,17 +240,17 @@ a:hover {
 	overflow: hidden;
 }
 #testimonials h3 {
-	margin: 0 0 25px 0;
+	margin: 0 0 2.432vw 0;
 }
 #testimonials .testimonial {
 	float: left;
-	width: 455px;
+	width: 44.261vw;
 	font-style: italic;
-	margin: 0 0 30px 0;
+	margin: 0 0 2.918vw 0;
 }
 #testimonials .testimonial .author-details {
 	color: #222;
-	margin: -10px 0 0 0;
+	margin: -0.973vw 0 0 0;
 	font-style: normal;
 }
 #testimonials .testimonial span {
@@ -249,17 +266,17 @@ a:hover {
 	text-align: center;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 10px;
-	padding-bottom: 25px;
+	padding-top: 0.973vw;
+	padding-bottom: 2.432vw;
 }
 #footer h3{
-	font-size: 18px;
+	font-size: 1.751vw;
 	display:inline-block;
 	margin: 0 auto;
 }
 #footer ul {
 	display:inline;
-	font-size: 18px;
+	font-size: 1.751vw;
 	color:  #36454F;
 	margin: 0 auto;
 }
@@ -267,14 +284,14 @@ a:hover {
 /* -- New Page -- */
 /* ------------ */
 #page_header {
-	padding: 50px 0 0 0;
-	border-bottom: 5px royalblue solid;
+	padding: 4.864vw 0 0 0;
+	border-bottom: 0.486vw royalblue solid;
 	overflow: hidden;
 }
 #page_header ul {
 	float:right;
 	display:inline;
-	font-size: 18px;
+	font-size: 1.751vw;
 	margin: 0 auto;
 }
 #page_header ul a {
@@ -283,9 +300,9 @@ a:hover {
 #page_header h1 {
 	float: left;
 	display:inline;
-	font-size: 40px;
+	font-size: 3.891vw;
 	font-weight: bold;
-	letter-spacing: -2px;
+	letter-spacing: -0.195vw;
 	margin: 0;
 }
 #page_header ul a:hover {
@@ -295,61 +312,60 @@ a:hover {
 /* -- MSSQL_PBI -- */
 /* ------------ */
 #SQL_PBI {
-	padding: 15px 0 0px 0;
-	/* border-bottom: 5px royalblue solid; */
+	padding: 1.459vw 0 0 0;
+	/* border-bottom: 0.486vw royalblue solid; */
 	overflow: hidden;
 }
 
 #SQL_PBI h2 {
 	float: right;
-	font-size: 30px;
+	font-size: 2.918vw;
 	color: #222;
-	margin: 8px 0 0 0;
-	letter-spacing: -1px;
+	margin: 0.778vw 0 0 0;
+	letter-spacing: -0.097vw;
 }
 #SQL_PBI h3 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	color: #222;
 	text-decoration: underline;
 	text-decoration-color: royalblue;
-	text-decoration-thickness: 2px;
-	margin: 50px 0 17px 0;
+	text-decoration-thickness: 0.195vw;
+	margin: 4.864vw 0 1.654vw 0;
 }
 #SQL_PBI h4 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	margin: 0 0 0 0;
 }
 #SQL_PBI h4 span {
 	color: #222;
 }
 #SQL_PBI h5 {
-	font-size: 16px;
-	margin: 75px 0 0 0;
+	font-size: 1.556vw;
+	margin: 7.296vw 0 0 0;
 }
 #SQL_PBI p {
-	line-height: 22px;
-	margin: 5px 0 23px 0;
+	line-height: 2.14vw;
+	margin: 0.486vw 0 2.237vw 0;
 }
 #SQL_PBI #about {
 	float: left;
 	/* width: 610px; */
-	margin: 0 0 0px 0;
+	margin: 0 0 0 0;
 }
 #SQL_PBI h6 {
 	float: left;
-	margin: 10px 0 10px 0px;
-	font-size: 18px;
+	margin: 0.973vw 0 0.973vw 0;
+	font-size: 1.751vw;
 }
 .project {
 	float: left;
-	width: 440px;
-	height: 240px;
-	padding-bottom: 45px; 
+	width: 42.802vw;
+	height: 23.346vw;
 	background: #D3D3D3;
-	-webkit-box-shadow: 0px 0 5px #D3D3D3;
-	-moz-box-shadow: 0px 0 5px#D3D3D3;
-	box-shadow: 0px 0 5px #D3D3D3;
-	margin: 2px 0 55px 2px; 
+	-webkit-box-shadow: 0 0 0.486vw #D3D3D3;
+	-moz-box-shadow: 0 0 0.486vw#D3D3D3;
+	box-shadow: 0 0 0.486vw #D3D3D3;
+	margin: 0.195vw 0 5.35vw 0.195vw; 
 }
 #SQL_PBI .project:hover {
 	opacity: 1;
@@ -362,7 +378,7 @@ a:hover {
 /* ------------ */
 #page_nav{
 
-	font-size: 18px;
+	font-size: 1.751vw;
 }
 #page_nav ul {
 	margin: 0 auto;	
@@ -378,65 +394,70 @@ a:hover {
 /* -- Tab_Exc_Pres -- */
 /* ------------ */
 #Tab_Exc_Pres {
-	padding: 5px 0 0px 0;
-	/* border-bottom: 5px royalblue solid; */
+	padding: 0.486vw 0 0 0;
+	/* border-bottom: 0.486vw royalblue solid; */
 	overflow: hidden;
 }
 
 #Tab_Exc_Pres h2 {
 	float: right;
-	font-size: 30px;
+	font-size: 2.918vw;
 	color: #222;
-	margin: 8px 0 0 0;
-	letter-spacing: -1px;
+	margin: 0.778vw 0 0 0;
+	letter-spacing: -0.097vw;
 }
 #Tab_Exc_Pres h3 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	color: #222;
 	text-decoration: underline;
 	text-decoration-color: royalblue;
-	text-decoration-thickness: 2px;
-	margin: 50px 0 10px 0;
+	text-decoration-thickness: 0.195vw;
+	margin: 4.864vw 0 0.973vw 0;
 }
 #Tab_Exc_Pres h4 {
-	font-size: 20px;
+	font-size: 1.946vw;
 	margin: 0 0 0 0;
 }
 #Tab_Exc_Pres h4 span {
 	color: #222;
 }
 #Tab_Exc_Pres h5 {
-	font-size: 16px;
-	margin: 75px 0 0 0;
+	font-size: 1.556vw;
+	margin: 7.296vw 0 0 0;
 }
 #Tab_Exc_Pres p {
-	line-height: 22px;
-	margin: 10px 0 3px 0;
+	line-height: 2.14vw;
+	margin: 0.973vw 0 0.292vw 0;
 }
 #Tab_Exc_Pres #about {
 	float: left;
 	/* width: 610px; */
-	margin: 0 0 20px 0;
+	margin: 0 0 1.946vw 0;
 }
 #Tab_Exc_Pres h6 {
 	float: left;
-	margin: 10px 0 10px 0px;
-	font-size: 18px;
+	margin: 0.973vw 0 0.973vw 0;
+	font-size: 1.751vw;
 }
 #Tab_Exc_Pres .project {
 	vertical-align: middle;
-	width: 800px;
-	height: 400px;
-	padding-left: 55px; 
-	padding-right: 30px;
+	width: 77.821vw;
+	height: 38.911vw;
+	padding-left: 5.35vw; 
+	padding-right: 2.918vw;
 	background: #D3D3D3;
-	-webkit-box-shadow: 0px 0 5px #D3D3D3;
-	-moz-box-shadow: 0px 0 5px#D3D3D3;
-	box-shadow: 0px 0 5px #D3D3D3;
-	margin: 15px 15px 15px 15px; 
+	-webkit-box-shadow: 0 0 0.486vw #D3D3D3;
+	-moz-box-shadow: 0 0 0.486vw#D3D3D3;
+	box-shadow: 0 0 0.486vw #D3D3D3;
+	margin: 1.459vw 1.459vw 1.459vw 1.459vw; 
 }
 #Tab_Exc_Pres .project:hover {
 	opacity: 0.50;
+}
+.box-3 {
+	padding-bottom: 2.918vw;
+	width: 100%;
+	margin-bottom: 1.459vw;
 }
 /* .last {
 	float: right;
