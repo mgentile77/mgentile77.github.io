@@ -345,11 +345,10 @@ a:hover {
 }
 #SQL_PBI p {
 	line-height: 2.14vw;
-	margin: 0.486vw 0 2.237vw 0;
+	margin: 0.973vw 0 2.237vw 0;
 }
 #SQL_PBI #about {
 	float: left;
-	/* width: 610px; */
 	margin: 0 0 0 0;
 }
 #SQL_PBI h6 {
@@ -431,7 +430,6 @@ a:hover {
 }
 #Tab_Exc_Pres #about {
 	float: left;
-	/* width: 610px; */
 	margin: 0 0 1.946vw 0;
 }
 #Tab_Exc_Pres h6 {
