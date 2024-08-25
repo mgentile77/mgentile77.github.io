@@ -308,12 +308,14 @@ a:hover {
 #page_header ul a:hover {
 	color: royalblue;
 }
+#page_header li {
+	display: inline;
+}
 /* ------------ */
 /* -- MSSQL_PBI -- */
 /* ------------ */
 #SQL_PBI {
 	padding: 1.459vw 0 0 0;
-	/* border-bottom: 0.486vw royalblue solid; */
 	overflow: hidden;
 }
 
@@ -366,35 +368,43 @@ a:hover {
 	box-shadow: 0 0 0.486vw #D3D3D3;
 	margin: 0.195vw 0 5.35vw 0.195vw; 
 }
-#SQL_PBI .project:hover {
+#SQL_PBI .disabled:hover {
 	opacity: 1;
 }
 .last {
 	float: right;
 }
+.box-3 {
+	padding-bottom: 2.918vw;
+	width: 100%;
+	margin-bottom: 1.459vw;
+}
 /* ------------ */
 /* -- New Page Nav -- */
 /* ------------ */
 #page_nav{
-
+	text-align: center;
+	padding: 2.918vw;
 	font-size: 1.751vw;
 }
 #page_nav ul {
 	margin: 0 auto;	
-	text-align: center;	
+	text-align: center;
 }
-#page_nav ul a {
+#page_nav a {
 	color:#36454F
 }
-#page_nav ul a:hover {
+#page_nav a:hover {
 	color: royalblue;
+}
+#page_nav li {
+	display:inline-block;
 }
 /* ------------ */
 /* -- Tab_Exc_Pres -- */
 /* ------------ */
 #Tab_Exc_Pres {
-	padding: 0.486vw 0 0 0;
-	/* border-bottom: 0.486vw royalblue solid; */
+	padding: 1.459vw 0 0 0;
 	overflow: hidden;
 }
 
@@ -411,7 +421,7 @@ a:hover {
 	text-decoration: underline;
 	text-decoration-color: royalblue;
 	text-decoration-thickness: 0.195vw;
-	margin: 4.864vw 0 0.973vw 0;
+	margin: 0 0 0.973vw 0;
 }
 #Tab_Exc_Pres h4 {
 	font-size: 1.946vw;
@@ -426,11 +436,11 @@ a:hover {
 }
 #Tab_Exc_Pres p {
 	line-height: 2.14vw;
-	margin: 0.973vw 0 0.292vw 0;
+	margin: 0.973vw 0 2.237vw 0;
 }
 #Tab_Exc_Pres #about {
 	float: left;
-	margin: 0 0 1.946vw 0;
+	margin: 0 0 0 0;
 }
 #Tab_Exc_Pres h6 {
 	float: left;
@@ -447,15 +457,18 @@ a:hover {
 	-webkit-box-shadow: 0 0 0.486vw #D3D3D3;
 	-moz-box-shadow: 0 0 0.486vw#D3D3D3;
 	box-shadow: 0 0 0.486vw #D3D3D3;
-	margin: 1.459vw 1.459vw 1.459vw 1.459vw; 
+	margin: 1.459vw 1.459vw 4.864vw 1.459vw; 
 }
 #Tab_Exc_Pres .project:hover {
 	opacity: 0.50;
 }
-.box-3 {
+#Tab_Exc_Pres .box-3 {
 	padding-bottom: 2.918vw;
 	width: 100%;
 	margin-bottom: 1.459vw;
+}
+#Tab_Exc_Pres .disabled:hover {
+	opacity: 1;
 }
 /* .last {
 	float: right;
