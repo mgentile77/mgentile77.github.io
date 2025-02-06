@@ -1,84 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Michael Genitle</title>
-<meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Gentile - Data Analyst Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Underline for Headers */
+        h1, h2 {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        h1::after, h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: royalblue;
+        }
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Button Color */
+        .btn-custom {
+            background-color: #53d539;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #7ad96c;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<div id="wrap">
-    <div id="page_header">
-        <h1>Tableau, Excel, and Presentations</h1>
-        <ul>
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="MSSQL_PBI.html"> Previous </a><span>|</span></li>
-            <li><a href="Py4Analytics.html"> Next</a></li>
-        </ul>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">Michael Gentile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="container my-4">
+            <h1 class="text-center">Tableau, Excel, and Presentations</h1>
+            <p class="text-left">Below are a few links to repositories with work I've completed in Tableau, Excel, and Power Point.
+                These repositories contain all the items needed to view my work and processes.</p>
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">Example 1: Excel and Power Point Presentation</h2>
+            <p class="text-left">
+                Excel is the program I have the most experience with, having used it for years to create pivots, graphs, and macros.</p> 
+            <p class="text-left">Below is an example of using Excel with Power Query to clean, organize, and analyze data. I 
+                then transformed the findings into a PowerPoint presentation, highlighting key insights.</p>
+            <p class="text-left">Finally, I added audio and converted it into an MP4 for distribution.</p>
+            <img src="images/Excel.schoolcomp.scrnsht2.png" alt="Project Image" class="card-img-top" >
+            <div class="text-center mt-3">
+                <a href="https://github.com/mgentile77/Presentations/blob/main/INFM%20219%20Project%20M.Gentile.zip" class="btn btn-custom" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">Example 2: Presentation</h2>
+            <p class="text-left">Here is an example of a presentation I created with added audio.</p> 
+            <p class="text-left">Built in PowerPoint, the audio was recorded and edited using various tools. 
+                I developed proficiency in audio editing while creating a podcast with my wife—a project we hope to resume in the future.</p>
+            <p class="text-left">Though the podcast was short-lived, it gave me the skills to produce high-quality, engaging content. 
+                This example highlights those skills and their application in a different setting</p>
+            <img src="images/Presentation.png" alt="Project Image" class="card-img-top" >
+            <div class="text-center mt-3">
+                <a href="https://github.com/mgentile77/Presentations/blob/main/M08%20Final%20Presentation%20M.Gentile.pptx" class="btn btn-custom" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">Example 3: Tableau</h2>
+            <p class="text-left">I worked with Tableau for a short time but gained the skills to earn a 
+                Tableau design certificate.  This link includes two dashboard examples where I used 
+                web-scraped data to create insights and complex drill-down reports.</p>
+            <img src="images/Tableau.scrnsht.hospital.png" alt="Project Image" class="card-img-top" >
+            <div class="text-center mt-3">
+                <a href="https://github.com/mgentile77/Tableau-Projects" class="btn btn-custom" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
     </div>
-    <div id="Tab_Exc_Pres">
-        <div id="about">
-            <p>Below are a few links to repositories with work I've completed in Tableau, Excel, and Power Point.
-                These repositories contain all the items needed to view my work and processes. 
-            </p>
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-        <div class="box-3 1">
-            <h3>Example 1: Excel and Power Point Presentation</h3>
-            <p>Excel is by far the program that I have the most experience.  
-                I've been using excel for years creating pivots, graphs, and macros.  
-                Below is an example of using excel with power query to clean, organize, and analyze data.  
-                I then developed the data into a Power Point presentation where the insights are highlighted and easily recognized.  
-                Audio was added next, and it was turned into and mp4 for distribution.</p>
-            <div class="project 1">
-                <a href="https://github.com/mgentile77/Presentations/blob/main/INFM%20219%20Project%20M.Gentile.zip"><img src="images/Excel.schoolcomp.scrnsht2.png" alt="" style="width: 95%; height: 95%"/></a> </div>
-        </div>
-        <div class="box-3 2">
-            <h3>Example 2: Presentations</h3>
-            <p>Next is an an example of a presentation I created and added audio.  
-                This presentation was built using Power Point, but the audio was created and edited using various audio tools.  
-                I became proficient in audio editing and production while developing a podcast with my wife.  
-                Unfortunately, we were not able to keep up with this hobby, but hope to continue our podcast in the near future.  
-                However, the experience did provide the skills necessary to produce a professional and entertaining product.  
-                This example showcases some of those skills and how they can be of use in a different setting.</p>
-            <div class="project 1">
-                <a href="https://github.com/mgentile77/Presentations/blob/main/M08%20Final%20Presentation%20M.Gentile.pptx"><img src="images/Presentation.png" alt="" style="width: 95%; height: 95%" /></a> </div>
-        </div>   
-        <div class="box-3 3">
-            <h3>Example 3: Tableau</h3>
-            <p>I was only able to work with Tableau for a short time, 
-                but was able to develop the skills to earn a certificate in for Tableau design.  
-                In this link you will find two examples of how I was able to build dashboards.  
-                I provide insights and complex drill downs in these reports using data from scraped from websites.</p>
-            <div class="project 1">
-                <a href="https://github.com/mgentile77/Tableau-Projects"><img src="images/Tableau.scrnsht.hospital.png" alt="" style="width: 95%;" /></a> </div>
-        </div>       
-    </div>
-    <div id="page_nav">
-        <ul>
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="MSSQL_PBI.html"> Previous </a><span>|</span></li>
-            <li><a href="Py4Analytics.html"> Next</a></li>
-        </ul>
-    </div>
-</div>
-<div id="footer">
-    <hr>
-    <h3>Contact Me: </h3>
-    &nbsp;
-    <ul>
-    Phone:<a href="tel:3176527465"> (317) 652-7465</a>
-    &nbsp;
-    Email:<a href="mailto:m.gentile1@outlook.com"> m.genitle1@outlook.com</a>
-    &nbsp; 
-    <a href="https://www.linkedin.com/in/michael-gentile-913164263/"> 
-        <i class="fab fa-linkedin-square" style="font-size:24px;color:#0077B5"></i></a>  
-    &nbsp;
-    <a href="https://github.com/mgentile77"> 
-        <i class="fab fa-github" style="font-size:24px;color:#2dba4e"></i></a>
-    </ul>
-</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

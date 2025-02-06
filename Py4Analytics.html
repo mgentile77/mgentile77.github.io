@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Michael Genitle</title>
-<meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Gentile - Data Analyst Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Underline for Headers */
+        h1, h2 {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        h1::after, h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: royalblue;
+        }
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Button Color */
+        .btn-custom {
+            background-color: #53d539;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #7ad96c;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<div id="wrap">
-    <div id="page_header">
-        <h1>Python for Analytics</h1>
-        <ul>
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="Tab_Exc_Pres.html"> Previous </a><span>|</span></li>
-            <li><a href="Recreational.html"> Next</a></li>
-        </ul>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">Michael Gentile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="container my-4">
+            <h1 class="text-center">Python for Analytics</h1>
+            <p class="text-left">Python was the first language I learned when I returned to school.  
+                I quickly embraced it and immediately began finding uses in my projects.  
+                The following examples demonstrate a few ways in which I have been able to utilize these skills in my analytics.</p>
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">Example 1: The Email Issues</h2>
+            <p class="text-left">
+                At Allegion, I was part of the DevOps team responsible for developing and maintaining the application 
+                that powered manufacturing lines. When issues arose, an error report was logged in the database, and 
+                an email alert was sent to developers.</p> 
+            <p class="text-left">Noticing that some email data wasn't stored in the database, I wrote a Python script 
+                to extract, parse, and store the missing information in a table. I then created a report to track 
+                recurring issues affecting production.</p>
+            <p class="text-left">This report played a key role in identifying the true cause of persistent line 
+                disruptions. While network issues were initially suspected, the data revealed that poor ERP 
+                archiving practices were slowing production processes.</p>
+            <img src="images/Email Collage.png" alt="Project Image" class="card-img-top" >
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">Example 2: Jupyter Analysis</h2>
+            <p class="text-left">
+                This project showcases data cleaning and analysis using Python and its libraries.</p> 
+            <p class="text-left">I used Pandas, Matplotlib, and Seaborn to generate a statistical report 
+                with visualizations, while markdown annotations provided key insights.</p>
+            <p class="text-left">The entire project was conducted in a Jupyter Notebook using only Python.</p>
+            <img src="images/JupyterAnalysis.png" alt="Project Image" class="card-img-top" >
+            <div class="text-center mt-3">
+                <a href="https://github.com/mgentile77/JupyterNB" class="btn btn-custom" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
 
     </div>
-    <div id="Tab_Exc_Pres">
-        <div id="about">
-            <p>Python was the first language I learned when I returned to school.  
-                I quickly embraced it and immediately began finding uses in my projects.  
-                The following examples demonstrate a few ways in which I have been able to utilize these skills in my analytics.</p></div>
-        <div class="box-3 1">
-            <h3>Example 1: The Email Issues</h3>
-            <p>At Allegion, I worked as a member of the DevOps team.  
-                This team was charged with developing and maintaining the application that drove their manufacturing lines.  
-                When this application had potential issues, an error report was saved in the database, 
-                and an email was sent out to the developers.  
-                I recognized that the emails had data not being stored due to when the email was sent versus when the error report 
-                was stored.  This modification to the application was low priority, 
-                so I wrote a quick Python script to pull the emails, parse them, and store them in a table.  
-                I then developed this report to determine issues affecting the manufacturing lines.  
-                It was speculated that network issues were slowing production.  
-                However, these issues were later proved to be caused by the ERP's poor archiving practices.  
-                This report proved critical in providing evidence for that revelation.</p>
-            <div class="project 1 disabled"> <img src="images/Email Collage.png" alt="" style="width: 95%;"/></a> </div>
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-        <div class="box-3 2">
-            <h3>Example 2: Jupyter Analysis</h3>
-            <p>This project is an example of using Python and Python libraries to clean and analyze a data set.  
-                I used Pandas, Matplotlib, and Seaborn to create a statistical report with graphical visualizations of the data set.  
-                The markdowns were used to provide insights into the information discovered.  
-                The entire project was completed using only Python in a Jupyter Notebook environment.  
-                Click on the picture below to review the repository with my complete code for cleaning and analysis.</p>
-            <div class="project 1">
-                <a href="https://github.com/mgentile77/JupyterNB"><img src="images/JupyterAnalysis.png" alt="" style="width: 95%;"/></a> </div>
-        </div>
-    </div>
-    &nbsp;
-    &nbsp;
-    <div id="page_nav">
-        <ul>
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="Tab_Exc_Pres.html"> Previous </a><span>|</span></li>
-            <li><a href="Recreational.html"> Next</a></li>
-        </ul>
-    </div>
-</div>
-<div id="footer">
-    <hr>
-    <h3>Contact Me:</h3>
-    &nbsp;
-        <ul>
-        Phone:<a href="tel:3176527465"> (317) 652-7465</a>
-        &nbsp;
-        Email:<a href="mailto:m.gentile1@outlook.com"> m.genitle1@outlook.com</a>
-        &nbsp; 
-        <a href="https://www.linkedin.com/in/michael-gentile-913164263/"> 
-            <i class="fab fa-linkedin-square" style="font-size:24px;color:#0077B5"></i></a>  
-        &nbsp;
-        <a href="https://github.com/mgentile77"> 
-            <i class="fab fa-github" style="font-size:24px;color:#2dba4e"></i></a>
-        </ul>
-</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

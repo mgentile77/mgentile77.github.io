@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Michael Genitle</title>
-<meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Gentile - Data Analyst Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Underline for Headers */
+        h1, h2 {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        h1::after, h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: royalblue;
+        }
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Button Color */
+        .btn-custom {
+            background-color: #53d539;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #7ad96c;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<div id="wrap">
-    <div id="page_header">
-        <h1>Recreational Projects</h1>
-        <ul>            
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="Py4Analytics.html"> Previous </a><span>|</span></li>
-            <li><a href="MSSQL_PBI.html"> Next</a></li>
-        </ul>
-    </div>
-    <div id="Tab_Exc_Pres">
-        <div id="about">
-            <p>I created this project to showcase my Python skills. 
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">Michael Gentile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="container my-4">
+            <h1 class="text-center">Recreational Projects</h1>
+            <p class="text-left">I created this project to showcase my Python skills. 
                 Speaking with my boys and determining a need they had based on a popular role-playing game, 
                 I began working on this project to assist with their game creation. 
                 I found that they were fond of short, episodic games, 
@@ -30,44 +69,34 @@
                 They also wanted a way to make engagements more enjoyable, 
                 so I added a feature that would allow them to create a horde of enemies with varying degrees of Hit Points. 
                 This makes the game more real by varying the experience of the enemies even when they are in the same monster class.</p>
-        </div>
-        <div class="box-3 1">
-            <h3>My HM Module</h3>
-            <p>This will create a horde of monsters of varying HP and AC.  
+        </section>
+        <section class="container my-4">
+            <h2 class="text-left">My HM Module</h2>
+            <p class="text-left">This will create a horde of monsters of varying HP and AC.  
                 This is will add an additional dimension to game play by varying the skill level 
                 and ac of monsters that may be of the same type by often attack in groups or hordes.</p>
             <p>
                 Additionally, this program will assist in quickly producing new characters. 
                 This is to help start game play faster for games that do not require players to start at 
                 level one while still providing some variablity in character creation.</p>
-            <p>Click on the picture to visit the repository with the latest Python script to download, review and play.</p>
-            <div class="project 1"> 
-                <a href="https://github.com/mgentile77/HM-Module/blob/main/Horde%20Maker%20Ver%200.1.11.zip"><img src="images/HM Module Collage.png" alt="" style="width: auto; height: 115%"/></a> </div>
+            <img src="images/HM Module Collage.png" alt="Project Image" class="card-img-top" >
+            <div class="text-center mt-3">
+                <a href="https://github.com/mgentile77/HM-Module/blob/main/Horde%20Maker%20Ver%200.1.11.zip" class="btn btn-custom" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-    </div>
-    <div id="page_nav">
-        <ul>
-            <li><a href="index.html">Home </a><span>|</span></li>
-            <li><a href="Py4Analytics.html"> Previous </a><span>|</span></li>
-            <li><a href="MSSQL_PBI.html"> Next</a></li>
-        </ul>
-    </div>
-</div>
-<div id="footer">
-    <hr>
-    <h3>Contact Me:</h3>
-    &nbsp;
-        <ul>
-        Phone:<a href="tel:3176527465"> (317) 652-7465</a>
-        &nbsp;
-        Email:<a href="mailto:m.gentile1@outlook.com"> m.genitle1@outlook.com</a>
-        &nbsp; 
-        <a href="https://www.linkedin.com/in/michael-gentile-913164263/"> 
-            <i class="fab fa-linkedin-square" style="font-size:24px;color:#0077B5"></i></a>  
-        &nbsp;
-        <a href="https://github.com/mgentile77"> 
-            <i class="fab fa-github" style="font-size:24px;color:#2dba4e"></i></a>
-        </ul>
-</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

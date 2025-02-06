@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Michael Genitle</title>
-<meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Gentile - Data Analyst Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles/custom.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Underline Headings */
+        h1, h5.card-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1::after, h5.card-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: royalblue;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover Effects for Cards */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-<div id="wrap">
-  <div id="header">
-    <h1>Michael Gentile</h1>
-    <h2>Data Analyst</h2>
-  </div>
-  <div id="bio">
-    <div id="about">
-      <div id="photo-bg"> 
-        <img src="images/Profile_Pic.jpg" alt=""  style ="border-radius:50%"/> 
-      </div>
-      <h3>About Me</h3>
-      <p>Hello, my name is Michael Gentile.  
-        Although still new in my analytics career, I've honed many skills throughout my 20 years in the commercial construction field.  
-        My experience has proven to make a marketable difference in creating the right visuals for the right people at the right time.  
-        Recently, I used those skills alongside my Python and SQL skills to build essential visualizations in Power BI that have 
-        become a standard for MES reports at my most recent employer.  
-        I am now seeking an opportunity to do this as part of another team.</p>
-      <p>Below you will find links to some of these projects.  
-        Please bear with me as I continue to update and complete this site.  
-        I will have all the links and pages available soon.  
-        If you have any questions or would like to reach me, my contact information is at the bottom of the page.  
-        Thank you for visiting my portfolio page. 
-        I look forward to talking with you soon about how I can help you with your next projects.</p>
+    <div class="container-fluid">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">Michael Gentile</a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bio Section -->
+        <section class="row my-4 align-items-center">
+            <div class="col-md-4 col-12 text-center mb-3">
+                <img src="images/Profile_Pic.jpg" class="img-fluid rounded-circle" alt="Michael Gentile">
+            </div>
+            <div class="col-md-8 col-12">
+                <h1 class="text-center text-md-start">About Me</h1>
+                <p>Hello, my name is Michael Gentile.  
+                    Although still new in my analytics career, I've honed many skills throughout my 20 years in the commercial construction field.  
+                    My experience has proven to make a marketable difference in creating the right visuals for the right people at the right time.  
+                    Recently, I used those skills alongside my Python and SQL skills to build essential visualizations in Power BI that have 
+                    become a standard for MES reports at my most recent employer.  
+                    I am now seeking an opportunity to do this as part of another team.</p>
+                  <p>Below you will find links to some of these projects.  
+                    Please bear with me as I continue to update and complete this site.  
+                    I will have all the links and pages available soon.  
+                    If you have any questions or would like to reach me, my contact information is at the bottom of the page.  
+                    Thank you for visiting my portfolio page. 
+                    I look forward to talking with you soon about how I can help you with your next projects.</p>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="text-center">
+            <h1 class="projects-heading">Featured Projects</h1>
+        </section>
+
+        <section class="row g-4 mt-4">
+            <div class="col-md-6 col-12" id="new-project">
+                <div class="card h-100">
+                    <img src="images/Powerbi.allegion.scrnsht.daily.png" class="card-img-top" alt="Power BI Project">
+                    <div class="card-body">
+                        <h5 class="card-title">MSSQL and Power BI</h5>
+                        <p class="card-text">Projects involving SQL optimization and dashboard creation...</p>
+                        <a href="MSSQL_PBI.html" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12" id="new-project">
+                <div class="card h-100">
+                    <img src="images/powerbi.allegion.scrnsht.email1.png" class="card-img-top" alt="New Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Python for Analytics</h5>
+                        <p class="card-text">These projects utilized Python and Python Libraries for retrieving and analyzing data...</p>
+                        <a href="Py4Analytics.html" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12" id="new-project">
+                <div class="card h-100">
+                    <img src="images/Excel.schoolcomp.scrnsht.png" class="card-img-top" alt="New Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Tableau, Excel and Presentations</h5>
+                        <p class="card-text">These projects are for prepared presentations built from data retrieved from spreadsheets...</p>
+                        <a href="Tab_Exc_Pres.html" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12" id="new-project">
+                <div class="card h-100">
+                    <img src="images/Python.DnD.scrnsht.png"" class="card-img-top" alt="New Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Recreational Projects</h5>
+                        <p class="card-text">This is a project originally scripted in Python but is being converted to mobile apps...</p>
+                        <a href="Recreational.html" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
-  <div id="featured-projects">
-    <h3>Featured Projects</h3>
-    <div class="box 1">
-        <h4>MSSQL and Power BI</h4>
-        <p>These projects included building and optimizing SQL code for Power BI reports and dashboards...</p>
-      <div class="project 1">
-        <a href="MSSQL_PBI.html"><img src="images/Powerbi.allegion.scrnsht.daily.png" alt="" /></a> 
-      </div>
-    </div>
-    <div class="box-2 1">
-        <h4>Tableau, Excel and Presentations</h4>
-        <p>These projects are for prepared presentations built from data retrieved from spreadsheets...</p>
-      <div class="project last 1">
-        <a href="Tab_Exc_Pres.html"><img src="images/Excel.schoolcomp.scrnsht.png" alt=""/></a> 
-      </div>
-    </div>
-    <div class="box 2">
-        <h4>Python for Analytics</h4>
-        <p>These projects utilized Python and Python Libraries for retrieving and analyzing data...</p>
-      <div class="project 2">  
-        <a href="Py4Analytics.html"><img src="images/powerbi.allegion.scrnsht.email1.png" alt=""/></a> 
-      </div>
-    </div>
-    <div class="box-2 2">
-        <h4>Recreational Projects</h4>
-        <p>This is a project originally scripted in Python but is being converted to mobile apps...</p>
-      <div class="project last 2">  
-        <a href="Recreational.html"><img src="images/Python.DnD.scrnsht.png" alt=""/></a> 
-      </div>
-    </div>
-  </div>
-  <!-- <div class="line"></div>
-  <div id="services">
-    <h3>Services</h3>
-    <div class="service first"> <img src="images/arrow.png" alt="" />
-      <h4>Website Development</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nibh mauris. Mauris interdum, dolor in vulputate tincidunt, mauris lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="service"> <img src="images/arrow.png" alt="" />
-      <h4>Search Engine Optimization</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nibh mauris. Mauris interdum, dolor in vulputate tincidunt, mauris lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="service"> <img src="images/arrow.png" alt="" />
-      <h4>Online Marketing Campaigns</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nibh mauris. Mauris interdum, dolor in vulputate tincidunt, mauris lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div> -->
-  <!-- </div>
-  <div class="line"></div>
-  <div id="testimonials">
-    <h3>Client Testimonials</h3>
-    <div class="testimonial">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan voluptate velit esse cillum dolore eu fugiat nulla pariatur." </p>
-      <p class="author-details">Fred Jackson / <span>Web Media Solutions</span></p>
-    </div>
-    <div class="testimonial last">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan voluptate velit esse cillum dolore eu fugiat nulla pariatur." </p>
-      <p class="author-details">Simon Smith / <span>Top Software Services</span></p>
-    </div>
-    <div class="testimonial">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan voluptate velit esse cillum dolore eu fugiat nulla pariatur." </p>
-      <p class="author-details">Jessica Simpson / <span>Web Media Solutions</span></p>
-    </div>
-    <div class="testimonial last">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan voluptate velit esse cillum dolore eu fugiat nulla pariatur." </p>
-      <p class="author-details">Sam Andrews / <span>Top Software Services</span></p>
-    </div> -->
-</div>
-<div id="footer">
-  <hr>
-  <h3>Contact Me:</h3>
-  &nbsp;
-  <ul>
-    Phone:<a href="tel:3176527465"> (317) 652-7465</a>
-    &nbsp;
-    Email:<a href="mailto:m.gentile1@outlook.com"> m.gentile1@outlook.com</a>
-    &nbsp; 
-    <a href="https://www.linkedin.com/in/michael-gentile-913164263/"> 
-      <i class="fab fa-linkedin-square" style="font-size:24px;color:#0077B5"></i></a>  
-    &nbsp;
-    <a href="https://github.com/mgentile77"> 
-      <i class="fab fa-github" style="font-size:24px;color:#2dba4e"></i></a>
-  </ul>
-</div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
