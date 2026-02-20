@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Gentile - Data Analyst Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Underline for Headers */
-        h1, h2 {
-            position: relative;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        h1::after, h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: royalblue;
-        }
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Michael Gentile portfolio: data analytics, SQL, Power BI, Python, and dashboarding projects.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        /* Custom Button Color */
-        .btn-custom {
-            background-color: #53d539;
-            color: white;
-        }
-        .btn-custom:hover {
-            background-color: #7ad96c;
-            color: white;
-        }
-    </style>
+  <title>Python Analytics | Michael Gentile</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="#">Michael Gentile</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="container my-4">
-            <h1 class="text-center">Python for Analytics</h1>
-            <p class="text-left">Python was the first language I learned when I returned to school.  
-                I quickly embraced it and immediately began finding uses in my projects.  
-                The following examples demonstrate a few ways in which I have been able to utilize these skills in my analytics.</p>
-        </section>
-        <section class="container my-4">
-            <h2 class="text-left">Example 1: The Email Issues</h2>
-            <p class="text-left">
-                At Allegion, I was part of the DevOps team responsible for developing and maintaining the application 
-                that powered manufacturing lines. When issues arose, an error report was logged in the database, and 
-                an email alert was sent to developers.</p> 
-            <p class="text-left">Noticing that some email data wasn't stored in the database, I wrote a Python script 
-                to extract, parse, and store the missing information in a table. I then created a report to track 
-                recurring issues affecting production.</p>
-            <p class="text-left">This report played a key role in identifying the true cause of persistent line 
-                disruptions. While network issues were initially suspected, the data revealed that poor ERP 
-                archiving practices were slowing production processes.</p>
-            <img src="images/Email Collage.png" alt="Project Image" class="card-img-top" >
-        </section>
-        <section class="container my-4">
-            <h2 class="text-left">Example 2: Jupyter Analysis</h2>
-            <p class="text-left">
-                This project showcases data cleaning and analysis using Python and its libraries.</p> 
-            <p class="text-left">I used Pandas, Matplotlib, and Seaborn to generate a statistical report 
-                with visualizations, while markdown annotations provided key insights.</p>
-            <p class="text-left">The entire project was conducted in a Jupyter Notebook using only Python.</p>
-            <img src="images/JupyterAnalysis.png" alt="Project Image" class="card-img-top" >
-            <div class="text-center mt-3">
-                <a href="https://github.com/mgentile77/JupyterNB" class="btn btn-custom" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
-            </div>
-        </section>
+  <div class="container-fluid px-0">
+    
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid justify-content-between">
+    <a class="navbar-brand" href="index.html">Michael Gentile</a>
 
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel & Presentations</a></li>
+        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational</a></li>
+      </ul>
+
+      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+        <a class="btn btn-accent btn-sm" href="assets/Michael_Gentile_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down me-1"></i> Resume
+        </a>
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
     </div>
-    <footer class="bg-light text-center py-3">
-        <div class="container">
-            <div class="contact-info">
-                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
-                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
-                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</nav>
+
+
+    <main class="container my-4">
+      <section class="hero reveal">
+        <h1 class="mb-2">Python Analytics</h1>
+        <p>Python projects focused on automation, analysis, and repeatable reporting workflows.</p>
+      </section>
+
+      
+<section class="section reveal">
+  <h2 class="h-underline">Example 1: Email Issue Parser</h2>
+  <p class="small-muted">
+    When error emails weren’t being stored in the database, I built a Python workflow to extract, parse, and persist missing details.
+    That enabled trend reporting and helped identify the root cause of recurring production disruptions.
+  </p>
+  <div class="card mt-3">
+    <img src="images/Email Collage.png" alt="Email parser project collage" class="card-img-top">
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h-underline">Example 2: Jupyter Analysis</h2>
+  <p class="small-muted">
+    Notebook-based analysis with Pandas + Matplotlib, using markdown annotations to narrate insights.
+  </p>
+  <div class="card mt-3">
+    <img src="images/JupyterAnalysis.png" alt="Jupyter analysis project screenshot" class="card-img-top">
+    <div class="card-body">
+      <a href="https://github.com/mgentile77/JupyterNB" class="btn btn-brand btn-sm" target="_blank" rel="noopener">
+        <i class="fab fa-github me-1"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TEMPLATE: add a new Python project
+<section class="section reveal">
+  <h2 class="h-underline">Example X: Title</h2>
+  <p class="small-muted">One paragraph: problem, approach, tools, result.</p>
+  <div class="card mt-3">
+    <img src="images/your-image.png" alt="Project screenshot" class="card-img-top">
+    <div class="card-body">
+      <a href="https://github.com/..." class="btn btn-brand btn-sm" target="_blank" rel="noopener">
+        <i class="fab fa-github me-1"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+-->
+
+    </main>
+
+    
+<footer class="text-center">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+      <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+      <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mgentile77" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="small-muted mt-2">© <span id="yearNow"></span> Michael Gentile</div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yearNow").textContent = new Date().getFullYear();
+</script>
+
+    
+<button id="backToTop" class="btn btn-brand btn-sm d-inline-flex align-items-center justify-content-center" type="button" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  </div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+
 </body>
 </html>

@@ -1,141 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Gentile - Data Analyst Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Underline for Headers */
-        h1, h2 {
-            position: relative;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        h1::after, h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: royalblue;
-        }
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Michael Gentile portfolio: data analytics, SQL, Power BI, Python, and dashboarding projects.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        /* Custom Button Color */
-        .btn-custom {
-            background-color: #53d539;
-            color: white;
-        }
-        .btn-custom:hover {
-            background-color: #7ad96c;
-            color: white;
-        }
-    </style>
+  <title>MSSQL & Power BI | Michael Gentile</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="#">Michael Gentile</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="container my-4">
-            <h1 class="text-center">MSSQL and Power BI</h1>
-            <p class="text-left">Here are some examples of how I can use my SQL skills in MSSQL to optimize queries 
-                and create stunning reports and dashboards on Power BI.  I recently did this for a former employer where
-                these report styles have become a staple for building reports in their MES division.</p>
-        </section>
-        <section class="container my-4">
-                <div class="text-left">
-                    <h2>Example 1: The Production Board</h2>
-                    <p>Here is an example of a dashboard I built with a direct query 
-                        I optimized in Power BI to obtain live updates as production occurred.  
-                        When building the following report, I met with stakeholders to determine what information was important 
-                        to include and who the report should be created for.  
-                        I also included branding and paid close attention to color development.</p>
-                </div>
-                <div class="image-grid mt-4">
-                    <div class="text-left">
-                        <h3>Before Optimization of SQL and Visualizations</h3>
-                        <img src="images/Powerbi.allegion.scrnsht.dailyold.png" alt="Example 1A" class="img-fluid mt-3">
-                    </div>
-                    <div class="text-left mt-4">
-                        <h3>After Optimization of SQL and Visualizations</h3>
-                        <img src="images/Powerbi.allegion.scrnsht.daily.png" alt="Example 1B" class="img-fluid mt-3">
-                    </div>
-                </div>
-        </section>
-        <section class="container my-4">
-            <div class="text-left">
-                <h2>Example 2: Historical Review</h2>
-                <p>Next is an example of a report with data duplicated from the previous report.  
-                    This report is a historical account of production totals and does not require data duplication.  
-                    Additionally, when the query was run for this report, it took over 20 minutes to complete on a 
-                    production-critical database and was run every hour.  
-                    I optimized the query, reducing run time to less than two minutes, 
-                    and removed the scheduling because stakeholders determined that the report did not need a scheduled refresh.</p>
-            </div>
-            <div class="image-grid mt-4">
-                <div class="text-left">
-                    <h3>Before Optimization of SQL and Visualizations</h3>
-                    <img src="images/Powerbi.allegion.scrnsht.historicalold.png" alt="Example 2A" class="img-fluid mt-3">
-                </div>
-                <div class="text-left mt-4">
-                    <h3>After Optimization of SQL and Visualizations</h3>
-                    <img src="images/Powerbi.allegion.scrnsht.historical.png" alt="Example 2B" class="img-fluid mt-3">
-                </div>
-            </div>
-    </section>
-    <section class="container my-4">
-        <div class="text-left">
-            <h2>Example 3: Shipping Dashboard</h2>
-            <p>This report is displayed daily on a large-screen TV, allowing production workers to track their progress in real time.</p>
-            <p>Originally, it was difficult to read without direct interaction, so I redesigned it for better clarity and ease of use. 
-                While the "before" image isn't the exact previous version, it reflects key issues like a stacked bar chart and a confusing 
-                time legend, which I removed to create a more visually effective dashboard.</p>
+  <div class="container-fluid px-0">
+    
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid justify-content-between">
+    <a class="navbar-brand" href="index.html">Michael Gentile</a>
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel & Presentations</a></li>
+        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational</a></li>
+      </ul>
+
+      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+        <a class="btn btn-accent btn-sm" href="assets/Michael_Gentile_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down me-1"></i> Resume
+        </a>
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="container my-4">
+      <section class="hero reveal">
+        <h1 class="mb-2">MSSQL & Power BI</h1>
+        <p>Examples of SQL tuning and dashboard design where performance and usability both matter.</p>
+      </section>
+
+      
+<section class="section reveal">
+  <h2 class="h-underline">Example 1: Production Board</h2>
+  <p class="small-muted mb-3">
+    DirectQuery dashboard optimized for live production updates. Built with stakeholder input, brand alignment, and deliberate visual hierarchy.
+  </p>
+
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">Before</h5>
+          <img src="images/Powerbi.allegion.scrnsht.dailyold.png" alt="Before optimization" class="img-fluid rounded">
         </div>
-        <div class="image-grid mt-4">
-            <div class="text-left">
-                <h3>Before Optimization of SQL and Visualizations</h3>
-                <img src="images/Powerbi.allegion.scrnsht.shipold.png" alt="Example 3A" class="img-fluid mt-3">
-            </div>
-            <div class="text-left mt-4">
-                <h3>After Optimization of SQL and Visualizations</h3>
-                <img src="images/Powerbi.allegion.scrnsht.ship.png" alt="Example 3B" class="img-fluid mt-3">
-            </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">After</h5>
+          <img src="images/Powerbi.allegion.scrnsht.daily.png" alt="After optimization" class="img-fluid rounded">
         </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-    </div>
-    <footer class="bg-light text-center py-3">
-        <div class="container">
-            <div class="contact-info">
-                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
-                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
-                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
-            </div>
+<section class="section reveal">
+  <h2 class="h-underline">Example 2: Historical Review</h2>
+  <p class="small-muted mb-3">
+    Reduced an hourly query that ran ~20 minutes on a production-critical database to under ~2 minutes, and removed an unnecessary scheduled refresh.
+  </p>
+
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">Before</h5>
+          <img src="images/Powerbi.allegion.scrnsht.historicalold.png" alt="Before optimization" class="img-fluid rounded">
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">After</h5>
+          <img src="images/Powerbi.allegion.scrnsht.historical.png" alt="After optimization" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2 class="h-underline">Example 3: Shipping Dashboard</h2>
+  <p class="small-muted mb-3">
+    Redesigned for large-screen readability: cleaner layout, simplified legends, and less cognitive load for fast scanning.
+  </p>
+
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">Before</h5>
+          <img src="images/Powerbi.allegion.scrnsht.shipold.png" alt="Before redesign" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="mb-2">After</h5>
+          <img src="images/Powerbi.allegion.scrnsht.ship.png" alt="After redesign" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    
+<footer class="text-center">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+      <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+      <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mgentile77" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="small-muted mt-2">© <span id="yearNow"></span> Michael Gentile</div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yearNow").textContent = new Date().getFullYear();
+</script>
+
+    
+<button id="backToTop" class="btn btn-brand btn-sm d-inline-flex align-items-center justify-content-center" type="button" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  </div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+
 </body>
 </html>

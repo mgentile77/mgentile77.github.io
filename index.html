@@ -1,159 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Gentile - Data Analyst Portfolio</title>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Michael Gentile portfolio: data analytics, SQL, Power BI, Python, and dashboarding projects.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="styles/custom.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Underline Headings */
-        h1, h5.card-title {
-            position: relative;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        h1::after, h5.card-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: royalblue;
-        }
-
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Hover Effects for Cards */
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+  <title>Michael Gentile | Data Analytics Portfolio</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="#">Michael Gentile</a>
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel and Presentations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational Projects</a></li>
+  <div class="container-fluid px-0">
+    
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid justify-content-between">
+    <a class="navbar-brand" href="index.html">Michael Gentile</a>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Bio Section -->
-        <section class="row my-4 align-items-center">
-            <div class="col-md-4 col-12 text-center mb-3">
-                <img src="images/suitProfile.jpg" class="img-fluid rounded-circle" alt="Michael Gentile">
-            </div>
-            <div class="col-md-8 col-12">
-                <h1 class="text-center text-md-start">About Me</h1>
-                <p>Hello, my name is Michael Gentile.  
-                    Although still new in my analytics career, I've honed many skills throughout my 20 years in the commercial construction field.  
-                    My experience has proven to make a marketable difference in creating the right visuals for the right people at the right time.  
-                    Recently, I used those skills alongside my Python and SQL skills to build essential visualizations in Power BI that have 
-                    become a standard for MES reports at my most recent employer.  
-                    I am now seeking an opportunity to do this as part of another team.</p>
-                  <p>Below you will find links to some of these projects.  
-                    Please bear with me as I continue to update and complete this site.  
-                    I will have all the links and pages available soon.  
-                    If you have any questions or would like to reach me, my contact information is at the bottom of the page.  
-                    Thank you for visiting my portfolio page. 
-                    I look forward to talking with you soon about how I can help you with your next projects.</p>
-            </div>
-        </section>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="MSSQL_PBI.html">MSSQL & Power BI</a></li>
+        <li class="nav-item"><a class="nav-link" href="Py4Analytics.html">Python Analytics</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tab_Exc_Pres.html">Tableau, Excel & Presentations</a></li>
+        <li class="nav-item"><a class="nav-link" href="Recreational.html">Recreational</a></li>
+      </ul>
 
-        <!-- Featured Projects Section -->
-        <section class="text-center">
-            <h1 class="projects-heading">Featured Projects</h1>
-        </section>
-
-        <section class="row g-4 mt-4">
-            <div class="col-md-6 col-12" id="new-project">
-                <div class="card h-100">
-                    <img src="images/Powerbi.allegion.scrnsht.daily.png" class="card-img-top" alt="Power BI Project">
-                    <div class="card-body">
-                        <h5 class="card-title">MSSQL and Power BI</h5>
-                        <p class="card-text">Projects involving SQL optimization and dashboard creation...</p>
-                        <a href="MSSQL_PBI.html" class="btn btn-primary">View Projects</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-12" id="new-project">
-                <div class="card h-100">
-                    <img src="images/powerbi.allegion.scrnsht.email1.png" class="card-img-top" alt="New Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Python for Analytics</h5>
-                        <p class="card-text">These projects utilized Python and Python Libraries for retrieving and analyzing data...</p>
-                        <a href="Py4Analytics.html" class="btn btn-primary">View Projects</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-12" id="new-project">
-                <div class="card h-100">
-                    <img src="images/Excel.schoolcomp.scrnsht.png" class="card-img-top" alt="New Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Tableau, Excel and Presentations</h5>
-                        <p class="card-text">These projects are for prepared presentations built from data retrieved from spreadsheets...</p>
-                        <a href="Tab_Exc_Pres.html" class="btn btn-primary">View Projects</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-12" id="new-project">
-                <div class="card h-100">
-                    <img src="images/Python.DnD.scrnsht.png"" class="card-img-top" alt="New Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Recreational Projects</h5>
-                        <p class="card-text">This is a project originally scripted in Python but is being converted to mobile apps...</p>
-                        <a href="Recreational.html" class="btn btn-primary">View Projects</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+        <a class="btn btn-accent btn-sm" href="assets/Michael_Gentile_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down me-1"></i> Resume
+        </a>
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
     </div>
+  </div>
+</nav>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-3">
-        <div class="container">
-            <div class="contact-info">
-                <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
-                <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
-                <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mgentile77"><i class="fab fa-github"></i></a>
+
+    <main class="container my-4">
+      <section class="hero reveal">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h1>Data Analytics, BI, and Automation</h1>
+            <p>
+              <!-- EDIT ME: one sentence about who you are, what you do, and what you’re looking for. -->
+              I build practical analytics that stakeholders actually use: clean data, fast SQL, and dashboards that answer real questions.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <span class="code-pill">SQL Server</span>
+              <span class="code-pill">Power BI</span>
+              <span class="code-pill">Python</span>
+              <span class="code-pill">ETL / ELT</span>
+              <span class="code-pill">Data Modeling</span>
             </div>
-        </div>
-    </footer>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a class="btn btn-brand" href="#projects"><i class="fa-solid fa-diagram-project me-1"></i> View Projects</a>
+              <a class="btn btn-outline-secondary" href="mailto:m.gentile1@outlook.com"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a>
+            </div>
+          </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="col-lg-5 text-center">
+            <!-- Keep your existing photo. Swap filename if needed. -->
+            <img src="images/suitProfile.jpg" class="img-fluid rounded-circle shadow" alt="Michael Gentile headshot" style="max-width: 240px;">
+            <div class="small-muted mt-3">
+              Indianapolis, IN • Open to analytics / BI roles
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2 class="h-underline">About</h2>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="mb-2">
+              <!-- EDIT ME: paste your updated intro here. Keep it tight. -->
+              I’m a hands-on analyst who likes turning messy operational data into decisions people can make.
+              My background includes years in the field and in operations, so I tend to build reporting that is both accurate and usable.
+            </p>
+            <p class="mb-0">
+              This site is a living portfolio. Each project includes a quick summary of the problem, what I built, and the tools used.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="card p-3 h-100">
+              <div class="fw-bold mb-2">Fast snapshot</div>
+              <ul class="mb-0 small-muted">
+                <li>Dashboards for execs + shop floor</li>
+                <li>SQL tuning + data modeling</li>
+                <li>Python automation for reporting</li>
+                <li>Comfortable with stakeholder interviews</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <h2 class="h-underline mb-1">Featured Projects</h2>
+            <!-- <div class="small-muted">Filter by focus area. Add new cards by copying one block.</div> -->
+          </div>
+
+          <!-- <div id="projectFilters" class="btn-group" role="group" aria-label="Project filters">
+            <button type="button" class="btn btn-outline-secondary active" data-filter="all">All</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="bi">BI</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="python">Python</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="viz">Viz</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="fun">Fun</button>
+          </div> -->
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-12" data-tags="bi">
+            <div class="card h-100">
+              <img src="images/Powerbi.allegion.scrnsht.daily.png" class="card-img-top" alt="Power BI project screenshot">
+              <div class="card-body">
+                <h5 class="card-title mb-2">MSSQL and Power BI</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge rounded-pill badge-soft">SQL Optimization</span>
+                  <span class="badge rounded-pill badge-soft">DirectQuery</span>
+                  <span class="badge rounded-pill badge-soft">Dashboard Design</span>
+                </div>
+                <p class="card-text small-muted">Examples of live production dashboards, query tuning, and stakeholder-driven reporting.</p>
+                <a href="MSSQL_PBI.html" class="btn btn-brand btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12" data-tags="python">
+            <div class="card h-100">
+              <img src="images/powerbi.allegion.scrnsht.email1.png" class="card-img-top" alt="Python analytics project screenshot">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Python for Analytics</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge rounded-pill badge-soft">Pandas</span>
+                  <span class="badge rounded-pill badge-soft">Automation</span>
+                  <span class="badge rounded-pill badge-soft">Jupyter</span>
+                </div>
+                <p class="card-text small-muted">Automation scripts and notebook-based analysis with visual storytelling.</p>
+                <a href="Py4Analytics.html" class="btn btn-brand btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12" data-tags="viz">
+            <div class="card h-100">
+              <img src="images/Excel.schoolcomp.scrnsht.png" class="card-img-top" alt="Excel / Tableau project screenshot">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Tableau, Excel & Presentations</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge rounded-pill badge-soft">Power Query</span>
+                  <span class="badge rounded-pill badge-soft">Tableau</span>
+                  <span class="badge rounded-pill badge-soft">Storytelling</span>
+                </div>
+                <p class="card-text small-muted">Dashboards, analysis, and presentations built for clear communication.</p>
+                <a href="Tab_Exc_Pres.html" class="btn btn-brand btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12" data-tags="fun">
+            <div class="card h-100">
+              <img src="images/Python.DnD.scrnsht.png" class="card-img-top" alt="Recreational project screenshot">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Recreational Projects</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge rounded-pill badge-soft">Python</span>
+                  <span class="badge rounded-pill badge-soft">UX</span>
+                  <span class="badge rounded-pill badge-soft">Game Tools</span>
+                </div>
+                <p class="card-text small-muted">Fun builds that still show real software and data skills.</p>
+                <a href="Recreational.html" class="btn btn-brand btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TEMPLATE: copy a card above to add a new project.
+               Update: image, title, tags, description, and link(s). -->
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="card p-4">
+          <div class="row g-3 align-items-center">
+            <div class="col-lg-8">
+              <h3 class="mb-1">Want the boring details?</h3>
+              <!-- <div class="small-muted">
+                Add your current PDF resume to <span class="code-pill">/assets/Michael_Gentile_Resume.pdf</span> and this button will work.
+              </div> -->
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-accent" href="assets/Michael_Gentile_Resume.pdf" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-arrow-down me-1"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+<footer class="text-center">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:3176527465" class="me-3"><i class="fas fa-phone"></i> (317) 652-7465</a>
+      <a href="mailto:m.gentile1@outlook.com" class="me-3"><i class="fas fa-envelope"></i> m.gentile1@outlook.com</a>
+      <a href="https://www.linkedin.com/in/michael-gentile-913164263/" class="me-3" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mgentile77" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="small-muted mt-2">© <span id="yearNow"></span> Michael Gentile</div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yearNow").textContent = new Date().getFullYear();
+</script>
+
+    
+<button id="backToTop" class="btn btn-brand btn-sm d-inline-flex align-items-center justify-content-center" type="button" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  </div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+
 </body>
 </html>

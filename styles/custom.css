@@ -1,104 +1,201 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #212529;
-    margin: 0;
-    padding: 0;
+/* ================================
+   Michael Gentile Portfolio v2
+   styles/custom.css
+   ================================ */
+
+/* Theme tokens */
+:root{
+  --bg: #f8f9fa;
+  --text: #212529;
+  --muted: #5c6670;
+  --card-bg: #ffffff;
+  --border: rgba(0,0,0,.08);
+  --shadow: 0 10px 24px rgba(0,0,0,.08);
+  --shadow-hover: 0 16px 36px rgba(0,0,0,.14);
+  --brand: royalblue;
+  --brand-2: #53d539;
+  --link: #0d6efd;
+  --hero-1: rgba(65,105,225,.14);
+  --hero-2: rgba(83,213,57,.10);
+  --code-bg: rgba(0,0,0,.04);
 }
 
-/* Navigation Styles */
-.navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+body.theme-dark{
+  --bg: #0f1216;
+  --text: #e6e8eb;
+  --muted: #a7b0ba;
+  --card-bg: #151a21;
+  --border: rgba(255,255,255,.10);
+  --shadow: 0 12px 30px rgba(0,0,0,.55);
+  --shadow-hover: 0 18px 44px rgba(0,0,0,.65);
+  --brand: #8aa4ff;
+  --brand-2: #7ad96c;
+  --link: #8aa4ff;
+  --hero-1: rgba(138,164,255,.16);
+  --hero-2: rgba(122,217,108,.10);
+  --code-bg: rgba(255,255,255,.06);
 }
 
-.navbar-brand {
-    font-weight: bold;
+/* Base */
+html{ scroll-behavior: smooth; }
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-nav .nav-link {
-    transition: color 0.3s ease, background-color 0.3s ease;
+/* Navbar */
+.navbar{
+  background: var(--card-bg) !important;
+  border-bottom: 1px solid var(--border);
+}
+.navbar-brand{ font-weight: 800; letter-spacing: .2px; }
+.navbar-nav .nav-link{
+  transition: color .2s ease, background-color .2s ease, transform .2s ease;
+  border-radius: 8px;
+  padding: .5rem .75rem;
+}
+.navbar-nav .nav-link:hover{
+  color: var(--brand) !important;
+  background-color: rgba(0,0,0,.04);
+}
+body.theme-dark .navbar-nav .nav-link:hover{
+  background-color: rgba(255,255,255,.06);
+}
+.navbar .nav-link.active{
+  color: var(--brand) !important;
+  font-weight: 700;
 }
 
-.navbar-nav .nav-link:hover {
-    color: royalblue;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+/* Hero */
+.hero{
+  border: 1px solid var(--border);
+  background: radial-gradient(1200px 700px at 10% 20%, var(--hero-1), transparent 60%),
+              radial-gradient(1200px 700px at 90% 30%, var(--hero-2), transparent 60%),
+              var(--card-bg);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 2.25rem 1.75rem;
+}
+.hero h1{
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  font-weight: 900;
+  margin: 0 0 .5rem 0;
+  letter-spacing: -.4px;
+}
+.hero p{
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.05rem;
 }
 
-/* Headings Underline */
-h1, h5.card-title {
-    position: relative;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+/* Underlined headings (clean + consistent) */
+.h-underline{
+  position: relative;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+.h-underline::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brand);
+  border-radius: 999px;
 }
 
-h1::after, h5.card-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: royalblue;
+/* Cards */
+.card{
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: none;
+  transition: transform .25s ease, box-shadow .25s ease;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+.card-img-top{ object-fit: cover; max-height: 220px; }
+
+/* Badges */
+.badge-soft{
+  border: 1px solid var(--border);
+  background: rgba(65,105,225,.10);
+  color: var(--text);
+}
+body.theme-dark .badge-soft{
+  background: rgba(138,164,255,.12);
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
+/* Buttons */
+.btn-brand{
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+.btn-brand:hover{ filter: brightness(1.05); color: white; }
+
+.btn-accent{
+  background-color: var(--brand-2);
+  border-color: var(--brand-2);
+  color: white;
+}
+.btn-accent:hover{ filter: brightness(1.05); color: white; }
+
+/* Sections */
+.section{
+  margin-top: 2rem;
 }
 
-/* Responsive Font Sizes */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    h5.card-title {
-        font-size: 1.2rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
+/* Footer */
+footer{
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+}
+footer .contact-info a{
+  color: var(--link);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+footer .contact-info a:hover{ opacity: .85; }
+
+/* Utility */
+.small-muted{ color: var(--muted); }
+.code-pill{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .25rem .6rem;
 }
 
-/* Hover Effects for Cards */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Scroll reveal (optional flair) */
+.reveal{
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer .contact-info a {
-    color: #007bff;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .contact-info a:hover {
-    color: darkblue;
-}
-
-/* Custom Button Color */
-.btn-custom {
-    background-color: #4078c0;
-    color: white;
-}
-.btn-custom:hover {
-    background-color: #3060a0;
-    color: white;
+/* Back-to-top */
+#backToTop{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  display: none;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
 }

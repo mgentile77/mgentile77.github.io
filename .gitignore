@@ -1,0 +1,5 @@
+# ===== Portfolio local-only docs (do not publish) =====
+private/
+docs-private/
+.DS_Store
+Thumbs.db
